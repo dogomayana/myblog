@@ -43,7 +43,7 @@ const PostDetail = ({ post }) => {
             <span className="block mr-4 items-center bg-green-600 lg:ml-10 h-[30px] w-[40px] overflow-hidden rounded-full">
               <Image
                 unoptimized="true"
-                loader={graphCMSImageLoader}
+                loader={GraphCMSImageLoader}
                 alt={post.author.name}
                 height={post.author.photo.height}
                 width={post.author.photo.width}
