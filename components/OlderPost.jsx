@@ -21,7 +21,7 @@ const OlderPost = ({post}) => {
             <div className="p-4">
                 {OldPosts.map((post, index)=>(
                     <div className="text-base flex mb-4 border-b-4 border-indigo-500"  key={index}>
-                    <span className="max-w-[200px] overflow-hidden lg:shrink-0">
+                    <span className="max-w-[200px] overflow-hidden md:shrink-0">
                     <Image src={post.featuredImage.url} 
                                 unoptimized="true"
                                 loader={GraphCMSImageLoader}

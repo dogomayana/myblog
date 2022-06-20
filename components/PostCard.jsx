@@ -10,10 +10,10 @@ import { GraphCMSImageLoader } from '../util';
 const PostCard =  ({ post, ref }) => {
   return (
     <>
-      <Meta keyword={post.title} description={post.excerpt}/>
+      {/* <Meta keyword={post.title} description={post.excerpt}/> */}
       <div className="container">
         <div className="bg-white shadow-md rounded-lg">
-          <span className="block overflow-hidden max-w-[380px] max-h-[150px] lg:max-w-lg lg:max-h-[200px] rounded-lg">
+          <span className="block overflow-hidden max-w-[380px] max-h-[150px] md:max-w-lg md:max-h-[200px] rounded-lg">
           <Image
             unoptimized="true"
             loader={GraphCMSImageLoader}
@@ -26,7 +26,7 @@ const PostCard =  ({ post, ref }) => {
            />
           </span>
 
-          <div className="p-2 max-h-[250px] mt-1 lg:mt-1 lg:ml-1 md:ml-2 border-l-2 pl-2 border-[#6495ed]">
+          <div className="p-2 max-h-[250px] mt-1 md:mt-1 md:ml-1 md:ml-2 border-l-2 pl-2 border-[#6495ed]">
             <h3 className="text-black cursor-pointer text-lg lg:text-2xl md:text-lg font-bold">
               <span className="TITLE">
               <Link className='no-underline' href={`/post/${post.slug}`} passHref>
@@ -34,7 +34,7 @@ const PostCard =  ({ post, ref }) => {
                </Link>
                </span>
             </h3>
-            <p className="flex mt-3 text-xs lg:text-base text-gray-500">
+            <p className="flex mt-3 text-xs md:text-base text-gray-500">
               <span className='inline capitalize'>Author: </span>
               <span className='inline capitalize ml-1 mr-2.5'>
                 {post.author.name} </span>
@@ -49,7 +49,7 @@ const PostCard =  ({ post, ref }) => {
 
             <p className='mt-3 mb-4 first-line:uppercase first-line:tracking-normal
                 first-letter:text-4xl first-letter:font-bold first-letter:text-[#6495ed]
-                first-letter:mr-3 first-letter:float-left text-base lg:text-lg'>
+                first-letter:mr-3 first-letter:float-left text-base md:text-lg'>
                 <span className="Excerpt">
                   {post.excerpt} 
                   <Link className='no-underline' href={`/post/${post.slug}`} passHref ref={ref}>
