@@ -25,8 +25,8 @@ const Meta =({title, keywords, description}) =>{
 
 Meta.defaultProps ={
     title:'Bryan Media',
-    keywords: 'Web Development, Nigeria Programming, Tech, Tech Skills, Top IT and Tech skills in Nigeria, How, to, build, a blog site',
-    description: "Bryan's media is a Nigeria blog site that showcases trendy News on Entertainment, Education, Technology, Sport, and Web-development.",
+    keywords: ' ReactJS, NextJs, Web Development, Nigeria Programming, Tech Skills, Top IT and Tech skills in Nigeria, How, create, a blog site',
+    description: "Bryan's media is a Nigeria blog site that publishes solutions to tech related issues, tech news, updates & trendy stories, and web/software development tutorials.",
 }
 
 export default Meta

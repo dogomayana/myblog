@@ -26,7 +26,7 @@ const PostCard =  ({ post, ref }) => {
            />
           </span>
 
-          <div className="p-2 max-h-[250px] mt-1 md:mt-1 md:ml-1 md:ml-2 border-l-2 pl-2 border-[#6495ed]">
+          <div className="p-2 max-h-[250px] mt-1 border-l-2 pl-2 border-[#6495ed]">
             <h3 className="text-black cursor-pointer text-lg lg:text-2xl md:text-lg font-bold">
               <span className="TITLE">
               <Link className='no-underline' href={`/post/${post.slug}`} passHref>
@@ -42,7 +42,7 @@ const PostCard =  ({ post, ref }) => {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 text-[#6495ed] inline mr-2 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg> </span>
-              <span className='inline  ml-1'>
+              <span className='inline ml-1'>
                 {moment(post.createdAt).format('MMM DD, YYYY')}
               </span>
             </p>

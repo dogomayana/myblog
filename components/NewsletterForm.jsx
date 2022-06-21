@@ -68,19 +68,19 @@ const NewsletterForm = ( { status, message, onValidated }) => {
     return (
       <div className='container'>
       <div className='bg-[#6495ed] p-2 mx-auto'>
-        <h3 className="mb-3 text-capitalize text-lg lg:text-xl">Subscribe to newsletter</h3>
+        <h3 className="mb-3 text-capitalize text-lg md:text-xl lg:text-xl">Subscribe to newsletter</h3>
         <div className="flex">
-          <div className='w-72 lg:w-96'>
+          <div className='w-72 md:w-96 lg:w-96'>
             <input
               onChange={(event) => setEmail(event?.target?.value ?? '')}
               type="email"
               placeholder="Your email"
-              className="border rounded border-secondary p-2 text-sm lg:text-lg inline-block w-full"
+              className="border rounded border-secondary p-2 text-sm md:text-lg lg:text-lg inline-block w-full"
               onKeyUp={(event) => handleInputKeyEvent(event)}
             />
           </div>
           <div className="inline ml-1">
-            <button  type="submit" className="bg-[#26619c] p-2 text-white lg:text-lg cursor-pointer rounded" onClick={handleFormSubmit}>
+            <button  type="submit" className="bg-[#26619c] p-2 text-white md:text-lg lg:text-lg cursor-pointer rounded" onClick={handleFormSubmit}>
               Submit
             </button>
           </div>

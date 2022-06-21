@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
      {/* > */}
       {/* This website uses cookies to enhance the user experience.{" "} */}
       {/* <span style={{ fontSize: "15px", marginLeft: '11px', fontStyle:"italic", color: "gold",}}>  */}
-      {/* <Link className='underline italic' href={`/privacy/privacyTerms`} passHref>Privacy &amp; terms</Link> */}
+      {/* <Link className='underline text-black italic' href={`/privacy/privacyTerms`} passHref>Privacy &amp; terms</Link> */}
       {/* </span> */}
     {/* </CookieConsent> */}
   </>

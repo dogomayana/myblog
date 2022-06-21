@@ -8,7 +8,7 @@ const NewsletterSubscribe = () => {
   
     return (
       <>
-      <div style={{marginTop:150}}>
+      <div style={{marginTop:151}}>
       <MailchimpSubscribe
         url={ MAILCHIMP_URL }
         render={ ( props ) => {

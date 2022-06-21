@@ -5,7 +5,7 @@ const Loader = () => {
         <>
            <div className="loader">
             <div className="mx-auto">
-                <div className="load"></div>
+                <div className="load man"></div>
             </div>
             </div> 
         </>
