@@ -26,7 +26,7 @@ const PostCard =  ({ post, ref }) => {
            />
           </span>
 
-          <div className="p-2 max-h-[250px] mt-1 border-l-2 pl-2 border-[#6495ed]">
+          <div className="p-2 mt-1 border-l-2 pl-2 border-[#6495ed]">
             <h3 className="text-black cursor-pointer text-lg lg:text-2xl md:text-lg font-bold">
               <span className="TITLE">
               <Link className='no-underline' href={`/post/${post.slug}`} passHref>

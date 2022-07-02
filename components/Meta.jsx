@@ -17,6 +17,7 @@ const Meta =({title, keywords, description}) =>{
             <meta charSet='utf-8'/>
             <meta name="theme-color" content="#6495ed"/>
             <link rel="apple-touch-icon" href="/favicon.ico"></link>
+            {/* <link rel='icon' href='/favicon.ico'/> */}
             <link rel='icon' href='/favicon.ico'/>
             <title>{title}</title>
         </Head>
