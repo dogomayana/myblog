@@ -89,7 +89,7 @@ const PostDetail = ({ post }) => {
                                    }
                          
                                    return (
-                                     <Link href={href} className='no-underline italic text-blue-500'>
+                                     <Link href={href} className='no-underline text-blue-500'>
                                        <a {...rest}>{children}</a>
                                      </Link>
                                    );
@@ -108,9 +108,10 @@ const PostDetail = ({ post }) => {
                                  h5:({children})=><h5 className="text-black font-bold my-2">{children}</h5>, 
                                  h2:({children})=><h2 className="text-black font-bold my-2">{children}</h2>, 
                                  h1:({children})=><h1 className="text-black font-bold my-2">{children}</h1>, 
-                                 p:({children})=><p className="my-4 text-black text-base leading-8 break-words md:text-xl text-start font-normal">{children}</p>, 
-                                 ul:({children})=><h2 className="text-black-600 text-base md:text-lg text-left my-4">{children}</h2>, 
-                                 li:({children})=><li className="text-black-600 no-disc text-base md:text-lg text-left">{children}</li>, 
+                                 p:({children})=><p className="my-4 text-black text-base leading-6 break-words md:text-xl text-start font-normal">{children}</p>, 
+                                 ul:({children})=><h2 className="text-black-600 text-base md:text-lg text-left my-4">{children}</h2>,
+                                 ol:({children})=><h2 className="text-black-600 text-base md:text-lg text-left my-4">{children}</h2>,
+                                 li:({children})=><li className="text-black-600 no-disc my-2 leading-6 text-base md:text-lg text-left">{children}</li>, 
                                  bold: ({ children }) => <strong>{children}</strong>, 
                                  }} 
                                /> 
