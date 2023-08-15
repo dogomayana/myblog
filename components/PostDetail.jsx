@@ -40,6 +40,7 @@ const PostDetail = ({ post }) => {
           <div className="flex mb-8">
             {/* Author Info */}
             <div className="flex">
+              {/*
             <span className="block mr-4 items-center bg-green-600 md:ml-10  md:ml-10 h-[30px] w-[40px] overflow-hidden rounded-full">
               <Image
                 unoptimized="true"
@@ -53,6 +54,7 @@ const PostDetail = ({ post }) => {
                 src={post.author.photo.url} 
                />
             </span>
+*/}
               <p className="inline-block text-gray-500 ml-1 md:ml-2 font-medium my-auto text-sm md:text-base">{post.author.name}</p>
               <p className="font-medium text-gray-500 md:my-auto">
                 <span>
